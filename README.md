@@ -1,4 +1,6 @@
-## Author: ELena Pearson
+## Author: Elena Pearson
+
+## created: 03/01/19
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,7 +1,34 @@
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+// const element = <h1>Hello</h1>;
+// console.log(element);
+// // React.createElement
+// ReactDOM.render(element, document.getElementById("root"));
+
 import React from "react";
 import ReactDOM from "react-dom";
+import IndecisionApp from "./components/IndecisionApp";
+import "./styles/styles.scss";
+// import 'normalize.css/normalize.css'
 
-const element = <h1>Hello</h1>;
-console.log(element);
-// React.createElement
-ReactDOM.render(element, document.getElementById("root"));
+class Person {
+  constructor(name = "Anonymous", age = 0) {
+    this.name = name;
+    this.age = age;
+  }
+  getGreeting() {
+    return `Hi. I am ${this.name}!`;
+  }
+  getDescription() {
+    return `${this.name} is ${this.age} years old`;
+  }
+}
+
+const me = new Person("Elena", 26);
+const other = new Person();
+
+console.log(other.getDescription());
+console.log(me.getDescription());
+
+ReactDOM.render(<IndecisionApp />, document.getElementById("root"));
